@@ -1,0 +1,159 @@
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Georama:wght@400;600&family=Lato:wght@400;600&display=swap");
+
+/* Resets */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+  text-rendering: optimizeSpeed;
+  font-family: "Lato", sans-serif;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  max-width: 100%;
+  block-size: auto;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+  font-family: "Georama", sans-serif;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  border: none;
+}
+
+input[type="checkbox"] {
+  cursor: pointer;
+}
+
+a,
+button {
+  cursor: pointer;
+}
+
+/* Predefines */
+:root {
+  --primary-color: #0e9e4d;
+  --secondary-color: #777777;
+}
+
+.heading {
+  color: var(--primary-color);
+}
+
+.grey-text {
+  color: var(--secondary-color);
+}
+
+.label {
+  display: inline-block;
+}
+
+.input {
+  width: 100%;
+  padding: 0 1.25rem;
+  border-radius: 5px;
+  box-shadow: 3px 3px 10px 3px rgba(27, 39, 61, 0.04);
+  border: 1px solid rgba(27, 39, 61, 0.1);
+  outline: 0;
+  font-size: 14px;
+  transition: 0.2s;
+}
+
+.input:focus {
+  border: 1px solid rgb(51, 153, 255, 0.8);
+}
+
+.link {
+  transition: 0.2s;
+}
+
+/* Layout */
+
+.nav-desktop-component {
+  background: rgba(51, 153, 255, 0.01);
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+
+.nav-desktop {
+  max-width: 1400px;
+  padding: 0 6.5rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-desktop .logo-container {
+  width: 64px;
+  position: relative;
+}
+
+.nav-desktop .logo-container img {
+  mix-blend-mode: multiply;
+}
+
+.nav-desktop .logo-container span {
+  display: block;
+  font-family: "Georama", sans-serif;
+  position: absolute;
+  bottom: 0;
+  font-size: 0.75rem;
+}
+
+.nav-list {
+  display: flex;
+}
+
+.nav-list .nav-list-item {
+  font-size: 1.125rem;
+  color: #1f1f1f;
+  margin: 0 2rem;
+  font-family: "Georama", sans-serif;
+}
+
+.nav-list .nav-list-item a {
+  transition: 0.2s;
+}
+
+.nav-list .nav-list-item a:hover {
+  color: #3399ff;
+}

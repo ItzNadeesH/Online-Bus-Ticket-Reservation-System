@@ -1,0 +1,250 @@
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Georama:wght@400;600&family=Lato:wght@400;600&display=swap");
+
+/* Resets */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+  text-rendering: optimizeSpeed;
+  font-family: "Lato", sans-serif;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  max-width: 100%;
+  block-size: auto;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+  font-family: "Georama", sans-serif;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  border: none;
+}
+
+input[type="checkbox"] {
+  cursor: pointer;
+}
+
+a,
+button {
+  cursor: pointer;
+}
+
+/* Predefines */
+:root {
+  --primary-color: #0e9e4d;
+  --secondary-color: #777777;
+}
+
+.heading {
+  color: var(--primary-color);
+}
+
+.grey-text {
+  color: var(--secondary-color);
+}
+
+.label {
+  display: inline-block;
+}
+
+.input {
+  width: 100%;
+  padding: 0 1.25rem;
+  border-radius: 5px;
+  box-shadow: 3px 3px 10px 3px rgba(27, 39, 61, 0.04);
+  border: 1px solid rgba(27, 39, 61, 0.1);
+  outline: 0;
+  font-size: 14px;
+  transition: 0.2s;
+}
+
+.input:focus {
+  border: 1px solid rgba(14, 158, 76, 0.5);
+}
+
+.btn {
+  width: 100%;
+  border-radius: 5px;
+  background: var(--primary-color);
+  color: white;
+  transition: 0.2s;
+}
+
+.btn:active {
+  background: rgb(9, 122, 58);
+}
+
+.link {
+  transition: 0.2s;
+}
+
+.link:hover {
+  color: rgba(14, 158, 76);
+}
+
+/* Layout */
+
+body {
+  background: rgba(51, 153, 255, 0.1);
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.dashboard {
+  padding: 2rem 1.5rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.widget-container {
+  background: white;
+  padding: 1.5rem;
+  max-width: 400px;
+  height: 120px;
+  flex-grow: 1;
+  width: 100%;
+  margin: 1rem;
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+  background: rgba(51, 153, 255, 0.2);
+}
+
+.img-container1 {
+  background: #43c525;
+  height: 36px;
+  border-radius: 4px;
+}
+
+.img-container2 {
+  background: #ffc107;
+  height: 36px;
+  border-radius: 4px;
+}
+
+.img-container3 {
+  background: #dc3545;
+  height: 36px;
+  border-radius: 4px;
+}
+
+.ticket-img {
+  width: 48px;
+  height: 36px;
+  filter: invert();
+}
+
+.table-container {
+  width: 100%;
+  margin-top: 2rem;
+}
+
+.table-container .table {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.table-container .table thead {
+  background: #3399ff;
+  color: white;
+  font-size: 0.875rem;
+}
+
+.table-container .table tbody {
+  background: rgba(51, 153, 255, 0.2);
+  font-size: 0.875rem;
+}
+
+.table-container .table thead th {
+  font-family: "Georama", sans-serif;
+  padding: 0.75rem;
+}
+
+.table-container .table tbody td {
+  padding: 0.5rem;
+  text-align: center;
+  border-top: rgba(37, 165, 197, 0.8) dashed 1px;
+}
+
+.actions a {
+	display: inline-block;
+	padding: 0 1rem;
+}
+
+.are-you-sure-component {
+  font-size: 1.5rem;
+  position: fixed;
+  display: none;
+  padding: 1rem;
+  background: white;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 8px;
+}
+
+.are-you-sure-component p {
+	margin-bottom: 1rem;
+	color: #3399ff;
+	font-family: "Georama", sans-serif;
+}
+
+.are-you-sure-component div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.are-you-sure-component button {
+	background: white;
+}
+
+.popup {
+  display: block;
+}
+
